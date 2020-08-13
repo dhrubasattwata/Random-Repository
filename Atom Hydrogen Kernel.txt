@@ -1,0 +1,23 @@
+For Python
+in CMD
+python -m pip install ipykernel
+python -m ipykernel install --user
+
+For R
+
+If Anaconda is installed and the Jupyter-Notebook with it (should be the standard install), open up the Anaconda prompt, 
+not the Windows command prompt or the Anaconda Navigator
+Look up the executable of R (not Rgui or Rstudio), it should be somewhere like 
+C:\Program Files\R\R-3.6.3\bin and remember the path typing cd C:\Program Files\R\R-3.5.1\bin and 
+start R by typing R
+install.packages('IRkernel')
+typing IRkernel::installspec()
+Now you can start an R kernel within Jupyter-Notebook
+
+
+For Julia
+
+type "julia" to start julia repl
+I had to enter '']" to get the "pkg>" prompt.
+then enter add "IJulia"
+then I could restart my jupyter notebook and julia worked
